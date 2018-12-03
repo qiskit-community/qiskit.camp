@@ -22,7 +22,7 @@
 html {
   font-family: 'IBM Plex Sans', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
-  font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (900 - 320)));
+  font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (900 - 320)));
 }
 
 header {
@@ -37,16 +37,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-header > * {
-  max-width: 60%;
-  margin: 0 auto;
+  align-self: center;
 }
 
 h1 {
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 200;
   border-bottom: 2px solid #D8D8D8;
   padding-bottom: 1rem;
