@@ -20,18 +20,23 @@
 * { margin: 0; padding: 0; }
 
 a {
+  text-decoration: none;
   color: #4A90E2;
 }
 
+a:hover {
+  opacity: 0.6;
+}
+
 html {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
-  font-size: calc(10px + (20 - 10) * ((700px - 340px) / (900 - 340)));
+  font-size: calc(10px + (18 - 10) * ((900px - 340px) / (900 - 340)));
   background-image: url('../img/dots.svg'), url('../img/dots.svg'), url('../img/dots.svg'),
                     url('../img/lines.svg'), url('../img/lines.svg'), url('../img/lines.svg');
   background-repeat: repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y;
   background-position-x: left, left, left, right 100px, right, right -100px;
-  background-position-y: bottom calc(100vh - 30%), bottom calc(100vh - 30% - 30px), bottom calc(100vh - 30% - 60px), 100vh, 100vh, 100vh;
+  background-position-y: top 1326px,top 1366px, top 1406px, top, top, top;
 }
 
 header {
@@ -61,6 +66,10 @@ header p {
   margin: 0.8rem;
 }
 
+.interest {
+  margin-top: 2rem;
+}
+
 .ibm-research {
   position: absolute;
   top: 0;
@@ -74,13 +83,25 @@ header p {
   border-top: 4px solid white;
 }
 
-.cta {
+.sign-up {
   display: inline-block;
   font-family: 'IBM Plex Sans', sans-serif;
-  color: inherit;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
+  background-color: transparent;
   border: 1px solid white;
   padding: 0.7rem 2rem;
+  margin-top: 2rem;
+}
+
+@supports (mix-blend-mode: screen) {
+  a:hover.sign-up {
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+    opacity: 1;
+  }
 }
 
 .scroll-down {
@@ -98,8 +119,15 @@ main .content > * {
   margin-right: 1.5rem;
 }
 
-main .content p {
+.content p {
+  line-height: 1.4rem;
   margin-bottom: 1rem;
+  max-width: 30rem;
+}
+
+.content .clarification {
+  font-size: 0.7rem;
+  line-height: 1rem;
 }
 
 h2 {
@@ -133,5 +161,6 @@ footer {
   justify-content: center;
   min-height: 10rem;
   text-align: center;
+  margin-top: 4rem;
   background-color: #0A1D8F;
 }
