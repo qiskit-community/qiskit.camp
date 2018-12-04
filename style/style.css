@@ -22,7 +22,7 @@
 html {
   font-family: 'IBM Plex Sans', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
-  font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (900 - 320)));
+  font-size: calc(12px + (20 - 12) * ((100vh - 340px) / (1024 - 340)));
 }
 
 header {
@@ -53,6 +53,19 @@ header p {
   margin: 0.8rem;
 }
 
+.ibm-research {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.ibm-research p {
+  margin: 0;
+  padding-top: 0.5rem;
+  display: inline-block;
+  border-top: 4px solid white;
+}
+
 .cta {
   display: inline-block;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -61,7 +74,7 @@ header p {
 }
 
 .scroll-down {
+  margin-top: 2rem;
   font-style: italic;
-  position: relative;
   text-align: center;
 }
