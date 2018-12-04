@@ -36,7 +36,7 @@ html {
                     url('../img/lines.svg'), url('../img/lines.svg'), url('../img/lines.svg');
   background-repeat: repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y;
   background-position-x: left, left, left, right 100px, right, right -100px;
-  background-position-y: top 1326px,top 1366px, top 1406px, top, top, top;
+  background-position-y: top calc(100vh + 890px),top calc(100vh + 930px), top calc(100vh + 970px), top, top, top;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
   height: 100vh;
   color: white;
   text-align: center;
-  background: url('../img/bg-lab.jpg');
+  background: url('../img/bg-collage.jpg');
   background-size: cover;
   background-position: 50%;
   display: flex;
