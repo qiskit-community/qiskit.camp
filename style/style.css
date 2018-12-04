@@ -19,10 +19,19 @@
   
 * { margin: 0; padding: 0; }
 
+a {
+  color: #4A90E2;
+}
+
 html {
   font-family: 'IBM Plex Mono', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
   font-size: calc(10px + (22 - 10) * ((700px - 340px) / (900 - 340)));
+  background-image: url('../img/dots.svg'), url('../img/dots.svg'), url('../img/dots.svg'),
+                    url('../img/lines.svg'), url('../img/lines.svg'), url('../img/lines.svg');
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y;
+  background-position-x: left, left, left, right 100px, right, right -100px;
+  background-position-y: bottom 55%, bottom calc(55% - 30px), bottom calc(55% - 60px), 100vh, 100vh, 100vh;
 }
 
 header {
@@ -86,7 +95,11 @@ main .cta {
 
 main .content > * {
   margin-left: 10%;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
+}
+
+main .content p {
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -111,4 +124,14 @@ h3 {
 
 h3 strong {
   font-weight: bold;
+}
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 10rem;
+  text-align: center;
+  background-color: #0A1D8F;
 }
