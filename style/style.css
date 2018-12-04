@@ -26,12 +26,12 @@ a {
 html {
   font-family: 'IBM Plex Mono', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
-  font-size: calc(10px + (22 - 10) * ((700px - 340px) / (900 - 340)));
+  font-size: calc(10px + (20 - 10) * ((700px - 340px) / (900 - 340)));
   background-image: url('../img/dots.svg'), url('../img/dots.svg'), url('../img/dots.svg'),
                     url('../img/lines.svg'), url('../img/lines.svg'), url('../img/lines.svg');
   background-repeat: repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y;
   background-position-x: left, left, left, right 100px, right, right -100px;
-  background-position-y: bottom 55%, bottom calc(55% - 30px), bottom calc(55% - 60px), 100vh, 100vh, 100vh;
+  background-position-y: bottom calc(100vh - 30%), bottom calc(100vh - 30% - 30px), bottom calc(100vh - 30% - 60px), 100vh, 100vh, 100vh;
 }
 
 header {
