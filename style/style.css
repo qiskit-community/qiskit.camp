@@ -22,7 +22,7 @@
 html {
   font-family: 'IBM Plex Mono', sans-serif;
   /* min-fs + (max-fs - min-fs) * ((viewport-width - min-vw) / (max-vw - min-vw)) */
-  font-size: calc(10px + (22 - 10) * ((100vh - 340px) / (900 - 340)));
+  font-size: calc(10px + (22 - 10) * ((700px - 340px) / (900 - 340)));
 }
 
 header {
@@ -41,7 +41,7 @@ header {
 
 h1 {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   border-bottom: 2px solid #D8D8D8;
   padding-bottom: 1rem;
@@ -55,7 +55,7 @@ header p {
 .ibm-research {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 8%;
 }
 
 .ibm-research p {
