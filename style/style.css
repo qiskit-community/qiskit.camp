@@ -44,12 +44,12 @@ header {
   height: 100vh;
   color: white;
   text-align: center;
-  background: url('../img/bg-low-res.jpg');
+  background: url('../img/bg-hi-res.jpg'), url('../img/bg-low-res.jpg');
   background-size: cover;
   background-position: 50%;
   background-position: center;
   background-attachment: fixed;
-  background-color: #865694;
+  background-color: rgb(103, 58, 183);;
   display: flex;
   flex-direction: column;
   justify-content: center;
