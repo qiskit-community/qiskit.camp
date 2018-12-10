@@ -88,13 +88,14 @@ header p {
   left: 8%;
 }
 
-.ibm-research p {
+.ibm-research a {
   margin: 0;
   padding-top: 0.2rem;
   display: inline-block;
   border-top: 4px solid white;
   font-size: 1.7rem;
   text-shadow: none;
+  color: white;
 }
 
 .logo {
