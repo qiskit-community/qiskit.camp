@@ -128,6 +128,43 @@ header p {
   }
 }
 
+.scroll-down {
+  margin-top: 6rem;
+  position: relative;
+  font-style: italic;
+}
+
+.icon-scroll {
+  width: 30px;
+  height: 53px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 0 3px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  position: absolute;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
 main .cta {
   border-color: black;
 }
@@ -181,41 +218,4 @@ footer {
   text-align: center;
   margin-top: 4rem;
   background-color: #0A1D8F;
-}
-
-.scroll-down {
-  margin-top: 6rem;
-  position: relative;
-  font-style: italic;
-}
-
-.icon-scroll {
-  width: 30px;
-  height: 53px;
-  margin: 0 auto;
-  box-shadow: inset 0 0 0 3px #fff;
-  border-radius: 25px;
-}
-.icon-scroll:before {
-  position: absolute;
-}
-.icon-scroll:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  animation: scroll 1.5s infinite;
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(46px);
-  }
 }
