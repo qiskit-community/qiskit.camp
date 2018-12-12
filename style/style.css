@@ -216,7 +216,6 @@ footer {
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
+    transform: translateY(46px);
   }
 }
