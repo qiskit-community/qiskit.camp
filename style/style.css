@@ -54,7 +54,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  text-shadow: 0px 1px 2px black;
+  text-shadow: 0px 3px 3px black;
 }
 
 /* Hack to target Safari only and disable the fixed effect which seems broken
@@ -94,7 +94,7 @@ header p {
   display: inline-block;
   border-top: 4px solid white;
   font-size: 1.7rem;
-  text-shadow: none;
+  text-shadow: 0px 3px 10px #2B2B2B;
   color: white;
 }
 
@@ -126,12 +126,6 @@ header p {
     text-shadow: none;
     font-weight: bold;
   }
-}
-
-.scroll-down {
-  margin-top: 2rem;
-  font-style: italic;
-  text-align: center;
 }
 
 main .cta {
@@ -187,4 +181,42 @@ footer {
   text-align: center;
   margin-top: 4rem;
   background-color: #0A1D8F;
+}
+
+.scroll-down {
+  margin-top: 6rem;
+  position: relative;
+  font-style: italic;
+}
+
+.icon-scroll {
+  width: 30px;
+  height: 53px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 0 3px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  position: absolute;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
 }
