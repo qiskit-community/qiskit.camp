@@ -79,6 +79,30 @@ in the latest version of the browser. */
   }
 }
 
+@media (max-height: 500px) {
+  .headlines {
+    font-size: 0.9em;
+    margin-top: 4.4rem;
+    margin-bottom: -6rem;
+  }
+
+  .headlines h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-height: 320px) {
+  .headlines {
+    font-size: 0.9em;
+    margin-top: 6.5rem;
+    margin-bottom: -7rem;
+  }
+
+  .icon-scroll {
+    display: none;
+  }
+}
+
 h1 {
   display: inline-block;
   font-size: 2.5rem;
