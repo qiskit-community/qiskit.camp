@@ -72,28 +72,10 @@ in the latest version of the browser. */
   }
 }
 
-@media (max-width:500px) {
-  .scroll-down {
-    margin-top: 3rem;
-  }
-}
-
-@media (max-height:800px) {
-  header {
-    justify-content: flex-end;
-  }
-
-  .scroll-down {
-    margin-top: 2rem;
-}
-
-@media (min-width:500px) and (min-height:800px) {
-  header {
-    justify-content: center;
-  }
-
-  .scroll-down {
-    margin-top: 6rem;
+@media (max-width: 500px) {
+  .headlines {
+    padding-top: 8rem;
+    margin-bottom: -5rem;
   }
 }
 
@@ -192,18 +174,8 @@ header p {
   margin-top: 2rem;
 }
 
-@supports (mix-blend-mode: screen) {
-  a:hover.sign-up {
-    color: black;
-    background-color: white;
-    mix-blend-mode: screen;
-    opacity: 1;
-    text-shadow: none;
-    font-weight: bold;
-  }
-}
-
 .scroll-down {
+  margin-top: 6rem;
   position: relative;
   font-style: italic;
 }
