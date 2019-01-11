@@ -255,6 +255,14 @@ h2::before {
   border-top: 1px solid #0A1D8F;
 }
 
+.faq h2 {
+  padding-left: 5%;
+}
+
+.faq h2::before {
+  margin-left: -5%;
+}
+
 h3 {
   font-weight: 200;
   margin-top: 3rem;
