@@ -136,7 +136,8 @@ header p {
 }
 
 .ibm-research {
-  margin-right: 1rem;
+  margin-left: 5%;
+  margin-right: auto;
 }
 
 .ibm-research a {
