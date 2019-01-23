@@ -318,10 +318,6 @@ footer {
     padding-top: 8rem;
     margin-bottom: -5rem;
   }
-
-  table {
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 320px) {
