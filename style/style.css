@@ -256,12 +256,22 @@ h2::before {
   border-top: 1px solid #0A1D8F;
 }
 
-.faq h2 {
+.second-level h2 {
   padding-left: 5%;
 }
 
-.faq h2::before {
+.second-level h2::before {
   margin-left: -5%;
+}
+
+.agenda h2 {
+  margin-bottom: 0.5rem;
+}
+
+.agenda .location {
+  font-weight: bold;
+  padding-left: 10%;
+  margin-bottom: 3rem;
 }
 
 h3 {
@@ -272,6 +282,24 @@ h3 {
 
 h3 strong {
   font-weight: bold;
+}
+
+table {
+  margin-left: 10%;
+}
+
+table tr td:first-child {
+  color: #0A1D8F;
+}
+
+table td {
+  text-align: center;
+  padding: 1.2rem 1.2rem 1rem 0;
+  border-bottom: 1px dotted #0A1D8F;
+}
+
+table tr td:first-child {
+  text-align: left;
 }
 
 footer {
@@ -289,6 +317,10 @@ footer {
   .headlines {
     padding-top: 8rem;
     margin-bottom: -5rem;
+  }
+
+  table {
+    margin: 0 auto;
   }
 }
 
