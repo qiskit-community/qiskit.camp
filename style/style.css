@@ -367,6 +367,10 @@ table tr td:first-child {
   text-align: left;
 }
 
+td.multislot {
+  vertical-align: top;
+}
+
 .session {
   margin-bottom: 1rem;
   max-width: 30rem;
