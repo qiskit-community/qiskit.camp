@@ -387,7 +387,7 @@ footer {
   background-color: #0A1D8F;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 720px) {
 
   .convertible-menu .hamburger {
     display: block;
