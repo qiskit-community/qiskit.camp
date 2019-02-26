@@ -376,6 +376,10 @@ td.multislot {
   max-width: 30rem;
 }
 
+.author {
+  font-style: italic;
+}
+
 footer {
   color: white;
   display: flex;
