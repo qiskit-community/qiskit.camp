@@ -62,6 +62,10 @@ header {
   text-shadow: 0px 3px 3px black;
 }
 
+header.madrid19 {
+    background-image: url('../madrid19/img/bg-hi-res.jpg'), url('../madrid19/img/bg-low-res.jpg');
+}
+
 /* Hack to target Safari only and disable the fixed effect which seems broken
 in the latest version of the browser. */
 @media not all and (min-resolution:.001dpcm) {
