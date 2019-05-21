@@ -1,2 +1,2 @@
-# qcamp
-QCamp site
+# qiskit.camp
+flagship 19 Qiskit Camp site
