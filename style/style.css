@@ -47,6 +47,7 @@ html {
 
 header {
   position: relative;
+  z-index: 50;
   height: 100vh;
   color: white;
   text-align: center;
@@ -62,8 +63,39 @@ header {
   text-shadow: 0px 3px 3px black;
 }
 
-header.madrid19 {
-    background-image: url('../madrid19/img/bg-hi-res.jpg'), url('../madrid19/img/bg-low-res.jpg');
+body.completed header::before {
+  content: "";
+  position: absolute;
+  z-index: 51;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.video-recap {
+  position: relative;
+  z-index: 60;
+  width: 60vw;
+  height: calc(0.5625 * 60vw);
+  max-width: 800px;
+  max-height: calc(0.5625 * 800px)
+}
+
+.written-recap {
+  position: relative;
+  z-index: 60;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.written-recap a {
+  color: white;
+  text-shadow: 0px 3px 1px black;
+  text-decoration: underline;
+}
+
+.written-recap a:hover {
+  opacity: 1.0;
+  text-decoration: none;
 }
 
 /* Hack to target Safari only and disable the fixed effect which seems broken
@@ -77,6 +109,8 @@ in the latest version of the browser. */
 }
 
 h1 {
+  position: relative;
+  z-index: 60;
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 200;
